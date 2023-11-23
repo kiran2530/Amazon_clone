@@ -44,7 +44,7 @@ a {
 .amazon-logo {
     background-image: url(images/amazon_logo.png);
     background-size: cover;
-    height: 50px;
+    height: 100%;
     width: 100%;
 }
 
@@ -269,4 +269,152 @@ ul a:hover , .pages a:hover {
 .copyright {
     margin-top: 5px;
     font-size: 0.8rem;
+}
+
+/* -------------- Responsive ---------------- */
+
+@media(Max-width:500px) {
+    .nav-amazon-logo {
+        height: 40px;
+        width: 80px;
+    }
+    .nav-lang {
+        display: none;
+    }
+    .nav-signin {
+        display: none;
+    }
+    .nav-address {
+        display: none;
+    }
+    .nav-search {
+        width: 250px;
+    }
+    .nav-card {
+        font-size: 0.7rem;
+    }
+    .nav-card i {
+        font-size: 20px;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+    .panel-options {
+        display: none;
+        flex-direction: column;
+        background: #374758ee;
+        position: absolute;
+        margin: 0;
+        top: 100%;
+        width: 100%;
+    }
+
+    .panel .panel-all:hover {
+        cursor: pointer;
+    }
+    .panel-options.active {
+        display: flex;
+    }
+    
+    .hero-section {
+        height: 200px;
+    }
+    .hero-msg {
+        height: 30px;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+
+    .box {
+        height: 350px;
+        width: 46%;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        height: 750px;
+        padding-left: 80px;
+    }
+
+    ul a, .foot-panel1 a {
+        font-size: 0.7rem;
+    }
+}
+
+@media(Max-width:420px) {
+    .nav-amazon-logo {
+        height: 30px;
+        width: 60px;
+    }
+    .nav-search {
+        width: 230px;
+    }
+    .nav-card {
+        font-size: 0.6rem;
+    }
+    .nav-card i {
+        font-size: 16px;
+    }
+
+    .panel {
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+    .panel-options {
+        display: none;
+        flex-direction: column;
+        background: #374758ee;
+        position: absolute;
+        margin: 0;
+        top: 100%;
+        width: 100%;
+    }
+
+    .panel .panel-all:hover {
+        cursor: pointer;
+    }
+    .panel-options.active {
+        display: flex;
+    }
+    
+    .hero-section {
+        height: 170px;
+    }
+    .hero-msg {
+        height: 25px;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .shop-section {
+        padding: 5px;
+    }
+
+    .box {
+        height: 300px;
+        width: 46%;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    .foot-panel2 {
+        flex-direction: column;
+        height: 750px;
+        padding-left: 80px;
+    }
+
+    ul a, .foot-panel1 a {
+        font-size: 0.7rem;
+    }
+
+    .box-content h2 {
+        font-size: 16px;
+    }
+
 }
